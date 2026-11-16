@@ -1,0 +1,75 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bursakit"
+version = "0.1.0.dev0"
+description = "Bursa Malaysia stock data and Malaysian macro series as pandas DataFrames, cached locally."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["bursa", "malaysia", "klse", "finance", "pandas", "bnm"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Typing :: Typed",
+]
+dependencies = [
+    "pandas>=2.2",
+    "requests>=2.31",
+    "yfinance>=0.2.54",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-cov>=5",
+    "mypy>=1.10",
+    "ruff>=0.5",
+    "pandas-stubs>=2.0",
+    "types-requests>=2.31",
+]
+
+[project.scripts]
+bursakit = "bursakit.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bursakit"]
+
+[tool.hatch.build.targets.sdist]
+include = ["bursakit", "tests", "docs", "README.md", "LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.coverage.run]
+source = ["bursakit"]
+# The live yfinance wrapper needs the network; the nightly live test covers it.
+omit = ["bursakit/sources/_yf.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.mypy]
+files = ["bursakit"]
+python_version = "3.10"
+strict = true
+# pandas-stubs types most indexing as Any; this check would flag every such return.
+warn_return_any = false
+
+[[tool.mypy.overrides]]
+module = ["yfinance", "yfinance.*"]
+ignore_missing_imports = true
