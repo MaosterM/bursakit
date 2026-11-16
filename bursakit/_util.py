@@ -53,7 +53,7 @@ def to_date(value: DateLike) -> date:
             parsed = pd.Timestamp(value)
         except (ValueError, TypeError) as exc:
             raise ValueError(f"not a date: {value!r}") from exc
-        if parsed is pd.NaT:
+        if pd.isna(parsed):
             raise ValueError(f"not a date: {value!r}")
         return parsed.date()
     raise TypeError(f"expected a date or ISO date string, got {type(value).__name__}")

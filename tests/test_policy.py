@@ -54,6 +54,25 @@ def test_calls_to_one_source_are_spaced(clock: list[float], offline: Offline) ->
     assert offline.slept == [2.0, 2.0]
 
 
+def test_a_long_wait_says_why(
+    clock: list[float], monkeypatch: pytest.MonkeyPatch, caplog: pytest.LogCaptureFixture
+) -> None:
+    monkeypatch.setitem(policy.POLICIES, "slow", Policy(min_interval=15.0))
+    with caplog.at_level("WARNING", logger="bursakit"):
+        for source in ("slow", "slow", "test", "test"):  # "test" waits 2 s: too short to mention
+            policy.call(source, lambda: None)
+    assert caplog.messages == ["slow: waiting 15 s to stay inside its rate limit"]
+
+
+def test_a_long_retry_wait_says_why(
+    clock: list[float], monkeypatch: pytest.MonkeyPatch, caplog: pytest.LogCaptureFixture
+) -> None:
+    monkeypatch.setitem(policy.POLICIES, "test", Policy(min_interval=0.0, backoff=8.0))
+    with caplog.at_level("WARNING", logger="bursakit"):
+        assert policy.call("test", Flaky(down())) == "ok"
+    assert caplog.messages == ["test: waiting 8 s before retry 1 of 3"]
+
+
 def test_sources_do_not_wait_for_each_other(clock: list[float], offline: Offline) -> None:
     policy.call("test", lambda: None)
     policy.call("another", lambda: None)
