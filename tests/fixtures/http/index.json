@@ -1,0 +1,9 @@
+{
+ "https://api.bnm.gov.my/public/exchange-rate/JPY/year/2024/month/1?quote=rm&session=1700": "api_bnm_gov_my_public_exchange_rate_JPY_year_2024_month_1_quote_rm_session_1700.json",
+ "https://api.bnm.gov.my/public/exchange-rate/USD/year/2024/month/1?quote=rm&session=1700": "api_bnm_gov_my_public_exchange_rate_USD_year_2024_month_1_quote_rm_session_1700.json",
+ "https://api.bnm.gov.my/public/exchange-rate/USD/year/2024/month/2?quote=rm&session=1700": "api_bnm_gov_my_public_exchange_rate_USD_year_2024_month_2_quote_rm_session_1700.json",
+ "https://api.bnm.gov.my/public/opr/year/2023": "api_bnm_gov_my_public_opr_year_2023.json",
+ "https://api.bnm.gov.my/public/opr/year/2024": "api_bnm_gov_my_public_opr_year_2024.json",
+ "https://api.data.gov.my/data-catalogue/?date_end=2024-01-31@date&date_start=2024-01-01@date&id=exchangerates_daily_1700&include=date,rate_type,jpy": "api_data_gov_my_data_catalogue_date_end_2024_01_31_date_date_start_2024_01_01_date_id_exchangerates_daily_1700_include_d.json",
+ "https://api.data.gov.my/data-catalogue/?date_end=2024-02-29@date&date_start=2024-01-01@date&id=exchangerates_daily_1700&include=date,rate_type,usd": "api_data_gov_my_data_catalogue_date_end_2024_02_29_date_date_start_2024_01_01_date_id_exchangerates_daily_1700_include_d.json"
+}
