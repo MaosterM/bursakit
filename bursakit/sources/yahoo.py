@@ -6,6 +6,7 @@ splits and bonus issues by Yahoo, not for dividends (``auto_adjust=False``).
 
 from __future__ import annotations
 
+import logging
 from datetime import date
 from functools import partial
 from typing import Any, ClassVar, Protocol
@@ -37,6 +38,8 @@ SECTORS = (
 )
 
 _RENAME = {"Open": "open", "High": "high", "Low": "low", "Close": "close", "Volume": "volume"}
+
+_log = logging.getLogger(__name__)
 
 
 class YFClient(Protocol):
@@ -86,10 +89,28 @@ class Yahoo(Source):
         if raw.empty:
             return pd.DataFrame(columns=PRICES.column_names, index=pd.DatetimeIndex([]))
         bars = raw.rename(columns=_RENAME)[PRICES.column_names]
-        bars = bars.dropna(subset=["open", "high", "low", "close"], how="all")
+        bars = bars.loc[(bars.index >= pd.Timestamp(start)) & (bars.index <= pd.Timestamp(end))]
+        bars = bars.dropna(subset=["open", "high", "low", "close"], how="all")  # no trading
+        bars = self._complete(bars, ticker)
         # Yahoo serves 32-bit floats (8.670000076...); Bursa ticks are 0.005 at the finest.
         bars[["open", "high", "low", "close"]] = bars[["open", "high", "low", "close"]].round(4)
-        return bars.loc[(bars.index >= pd.Timestamp(start)) & (bars.index <= pd.Timestamp(end))]
+        return bars
+
+    def _complete(self, bars: pd.DataFrame, ticker: Ticker) -> pd.DataFrame:
+        """Drop days with a missing price or volume, so one bad row costs one row.
+
+        Without this the schema check would reject the whole range. Each dropped
+        day is logged, because it leaves a gap that only ``refresh=True`` refills.
+        """
+        partial_days = bars.isna().any(axis=1)
+        if not partial_days.any():
+            return bars.copy()
+        dropped = [day.strftime("%Y-%m-%d") for day in bars.index[partial_days]]
+        shown = ", ".join(dropped[:5]) + (", ..." if len(dropped) > 5 else "")
+        _log.warning(
+            "yahoo: dropped %d incomplete row(s) for %s: %s", len(dropped), ticker.symbol, shown
+        )
+        return bars.loc[~partial_days].copy()
 
     def dividends(self, ticker: Ticker) -> pd.DataFrame:
         raw = self._history(ticker, None, None)

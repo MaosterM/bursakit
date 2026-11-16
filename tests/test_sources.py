@@ -75,6 +75,44 @@ def test_yahoo_rejects_a_history_without_the_expected_columns() -> None:
         Yahoo(Renamed()).prices(MAYBANK, D("2024-01-01"), D("2024-01-31"))
 
 
+class Holes(RecordedYF):
+    """Recorded history with values blanked out, as Yahoo sometimes serves it."""
+
+    def __init__(self, holes: dict[str, str]) -> None:
+        super().__init__()
+        self.holes = holes
+
+    def history(self, symbol: str, start: date | None, end: date | None) -> pd.DataFrame:
+        frame = super().history(symbol, start, end).astype({"Volume": "float64"})
+        days = frame.index.tz_localize(None).normalize()
+        for day, column in self.holes.items():
+            frame.loc[days == pd.Timestamp(day), column] = float("nan")
+        return frame
+
+
+def test_yahoo_drops_an_incomplete_row_and_keeps_the_rest(
+    yahoo: Yahoo, caplog: pytest.LogCaptureFixture
+) -> None:
+    whole = yahoo.prices(MAYBANK, D("2024-01-01"), D("2024-01-31"))
+    holes = Yahoo(Holes({"2024-01-03": "Volume", "2024-01-10": "Close"}))
+    with caplog.at_level("WARNING", logger="bursakit"):
+        out = validate(holes.prices(MAYBANK, D("2024-01-01"), D("2024-01-31")), PRICES)
+
+    gone = [pd.Timestamp("2024-01-03"), pd.Timestamp("2024-01-10")]
+    pd.testing.assert_frame_equal(out, validate(whole.drop(index=gone), PRICES))
+    assert caplog.messages == [
+        "yahoo: dropped 2 incomplete row(s) for 1155.KL: 2024-01-03, 2024-01-10"
+    ]
+
+
+def test_yahoo_complete_history_logs_nothing(
+    yahoo: Yahoo, caplog: pytest.LogCaptureFixture
+) -> None:
+    with caplog.at_level("DEBUG", logger="bursakit"):
+        yahoo.prices(MAYBANK, D("2024-01-01"), D("2024-01-31"))
+    assert caplog.messages == []
+
+
 def test_yahoo_lookup(yahoo: Yahoo) -> None:
     assert yahoo.lookup("maybank") == Ticker("1155", "MAYBANK")
     assert yahoo.lookup("TENAGA") == Ticker("5347", "TENAGA")
