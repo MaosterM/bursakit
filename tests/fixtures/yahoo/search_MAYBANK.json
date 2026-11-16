@@ -1,0 +1,71 @@
+[
+ {
+  "exchange": "KLS",
+  "shortname": "MAYBANK",
+  "quoteType": "EQUITY",
+  "symbol": "1155.KL",
+  "index": "quotes",
+  "score": 20386.0,
+  "typeDisp": "Equity",
+  "longname": "Malayan Banking Berhad",
+  "exchDisp": "Kuala Lumpur Stock Exchange",
+  "sector": "Financial Services",
+  "sectorDisp": "Financial Services",
+  "industry": "Banks\u2014Regional",
+  "industryDisp": "Banks\u2014Regional",
+  "dispSecIndFlag": true,
+  "isYahooFinance": true
+ },
+ {
+  "exchange": "JKT",
+  "shortname": "Bank Maybank Indonesia Tbk.",
+  "quoteType": "EQUITY",
+  "symbol": "BNII.JK",
+  "index": "quotes",
+  "score": 20063.0,
+  "typeDisp": "Equity",
+  "longname": "PT Bank Maybank Indonesia Tbk",
+  "exchDisp": "Jakarta",
+  "sector": "Financial Services",
+  "sectorDisp": "Financial Services",
+  "industry": "Banks\u2014Regional",
+  "industryDisp": "Banks\u2014Regional",
+  "isYahooFinance": true
+ },
+ {
+  "exchange": "NZE",
+  "shortname": "0P0001M336.NZ",
+  "quoteType": "MUTUALFUND",
+  "symbol": "0P0001M336.NZ",
+  "index": "quotes",
+  "score": 20005.0,
+  "typeDisp": "Fund",
+  "longname": "Maybank Asian Growth and Inc A NZD Inc",
+  "exchDisp": "New Zealand",
+  "isYahooFinance": true
+ },
+ {
+  "exchange": "SES",
+  "shortname": "0P0001OHDD.SI",
+  "quoteType": "MUTUALFUND",
+  "symbol": "0P0001OHDD.SI",
+  "index": "quotes",
+  "score": 20005.0,
+  "typeDisp": "Fund",
+  "longname": "Maybank Asian Growth and Inc-I A SGD Acc",
+  "exchDisp": "Singapore",
+  "isYahooFinance": true
+ },
+ {
+  "exchange": "BER",
+  "shortname": "0P0001M335.BE",
+  "quoteType": "MUTUALFUND",
+  "symbol": "0P0001M335.BE",
+  "index": "quotes",
+  "score": 20005.0,
+  "typeDisp": "Fund",
+  "longname": "Maybank Asian Growth and Inc A AUD Inc",
+  "exchDisp": "Berlin",
+  "isYahooFinance": true
+ }
+]

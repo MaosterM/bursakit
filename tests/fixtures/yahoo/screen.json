@@ -1,0 +1,2420 @@
+{
+ "Basic Materials": [
+  {
+   "symbol": "0054.KL",
+   "shortName": "KARYON",
+   "longName": "Karyon Industries Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0055.KL",
+   "shortName": "SERSOL",
+   "longName": "Sersol Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0098.KL",
+   "shortName": "AUMAS",
+   "longName": "AuMas Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0100.KL",
+   "shortName": "ESCERAM",
+   "longName": "ES Ceramics Technology Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0105.KL",
+   "shortName": "ASIAPLY",
+   "longName": "Asia Poly Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0109.KL",
+   "shortName": "SCBUILD",
+   "longName": "SC Estate Builder Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0161.KL",
+   "shortName": "HEXIND",
+   "longName": "Hextar Industries Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0205.KL",
+   "shortName": "DPIH",
+   "longName": "DPI Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0211.KL",
+   "shortName": "TASHIN",
+   "longName": "Tashin Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0266.KL",
+   "shortName": "LEFORM",
+   "longName": "Leform Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0288.KL",
+   "shortName": "MINOX",
+   "longName": "Minox International Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0289.KL",
+   "shortName": "PLYTEC",
+   "longName": "PLYTEC Holding Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0297.KL",
+   "shortName": "TSA",
+   "longName": "TSA Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0301.KL",
+   "shortName": "ZANTAT",
+   "longName": "Zantat Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0306.KL",
+   "shortName": "SMART",
+   "longName": "Smart Asia Chemical Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0313.KL",
+   "shortName": "BWYS",
+   "longName": "BWYS Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0331.KL",
+   "shortName": "CRPMATE",
+   "longName": "Cropmate Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0336.KL",
+   "shortName": "WINSTAR",
+   "longName": "Winstar Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0346.KL",
+   "shortName": "SALIRAN",
+   "longName": "Saliran Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0349.KL",
+   "shortName": "SUMI",
+   "longName": "Sumisaujana Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0352.KL",
+   "shortName": "WTEC",
+   "longName": "WTEC Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0379.KL",
+   "shortName": "PMW",
+   "longName": "PMW International Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0381.KL",
+   "shortName": "POLYMER",
+   "longName": "Polymer Link Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0385.KL",
+   "shortName": "BMS",
+   "longName": "BMS Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0463.KL",
+   "shortName": "ECKEM",
+   "longName": "Eckem Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0475.KL",
+   "shortName": "GBBOND",
+   "longName": null,
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2127.KL",
+   "shortName": "COMFORT",
+   "longName": "Comfort Gloves Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2674.KL",
+   "shortName": "ALCOM",
+   "longName": "Alcom Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2852.KL",
+   "shortName": "CMSB",
+   "longName": "Cahya Mata Sarawak Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3298.KL",
+   "shortName": "HEXZA",
+   "longName": "Hexza Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Communication Services": [
+  {
+   "symbol": "0007.KL",
+   "shortName": "PUC",
+   "longName": "PUC Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0017.KL",
+   "shortName": "NOVATECH",
+   "longName": "Nova Technology Services Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0032.KL",
+   "shortName": "REDTONE",
+   "longName": "REDtone Digital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0082.KL",
+   "shortName": "GPACKET",
+   "longName": "Green Packet Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0092.KL",
+   "shortName": "MTOUCHE",
+   "longName": "mTouche Technology Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0103.KL",
+   "shortName": "MNC",
+   "longName": "M N C Wireless Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0147.KL",
+   "shortName": "INNITY",
+   "longName": "Innity Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0165.KL",
+   "shortName": "XOX",
+   "longName": "XOX Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0165PA.KL",
+   "shortName": "XOX-PA",
+   "longName": "XOX Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0172.KL",
+   "shortName": "OCK",
+   "longName": "OCK Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0173.KL",
+   "shortName": "CATCHA",
+   "longName": "Catcha Digital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0195.KL",
+   "shortName": "BINACOM",
+   "longName": "Binasat Communications Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0315.KL",
+   "shortName": "KUCINGKO",
+   "longName": "Kucingko Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0382.KL",
+   "shortName": "FOODIE",
+   "longName": "Foodie Media Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0386.KL",
+   "shortName": "SBS",
+   "longName": "SBS Nexus Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4502.KL",
+   "shortName": "MEDIA",
+   "longName": "Media Prima Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4863.KL",
+   "shortName": "TM",
+   "longName": "Telekom Malaysia Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5031.KL",
+   "shortName": "TIMECOM",
+   "longName": "TIME dotCom Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5090.KL",
+   "shortName": "MEDIAC",
+   "longName": "Media Chinese International Limited",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5252.KL",
+   "shortName": "SASBADI",
+   "longName": "Sasbadi Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5332.KL",
+   "shortName": "REACHTEN",
+   "longName": "Reach Ten Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "6012.KL",
+   "shortName": "MAXIS",
+   "longName": "Maxis Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "6084.KL",
+   "shortName": "STAR",
+   "longName": "Star Media Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "6399.KL",
+   "shortName": "ASTRO",
+   "longName": "Astro Malaysia Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "6888.KL",
+   "shortName": "AXIATA",
+   "longName": "Axiata Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "6947.KL",
+   "shortName": "CDB",
+   "longName": "Celcomdigi Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "9431.KL",
+   "shortName": "SJC",
+   "longName": "Seni Jaya Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Consumer Cyclical": [
+  {
+   "symbol": "0022.KL",
+   "shortName": "PARLO",
+   "longName": "Parlo Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0037.KL",
+   "shortName": "RGB",
+   "longName": "RGB International Bhd.",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0116.KL",
+   "shortName": "FOCUS",
+   "longName": "Focus Dynamics Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0153.KL",
+   "shortName": "OVERSEA",
+   "longName": "Oversea Enterprise Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0190.KL",
+   "shortName": "ESAFE",
+   "longName": "Eversafe Rubber Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0197.KL",
+   "shortName": "WEGMANS",
+   "longName": "Wegmans Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0210.KL",
+   "shortName": "ARVEX",
+   "longName": "Arvex Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0216.KL",
+   "shortName": "SPRING",
+   "longName": "Spring Art Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0228.KL",
+   "shortName": "HPPHB",
+   "longName": "HPP Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0229.KL",
+   "shortName": "MOBILIA",
+   "longName": "Mobilia Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0230.KL",
+   "shortName": "TELADAN",
+   "longName": "Teladan Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0239.KL",
+   "shortName": "ECOMATE",
+   "longName": "Ecomate Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0250.KL",
+   "shortName": "YXPM",
+   "longName": "YX Precious Metals Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0263.KL",
+   "shortName": "BETA",
+   "longName": "Betamek Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0268.KL",
+   "shortName": "L&PBHD",
+   "longName": "L&P Global Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0269.KL",
+   "shortName": "DSS",
+   "longName": "DS Sigma Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0279.KL",
+   "shortName": "SYNERGY",
+   "longName": "Synergy House Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0287.KL",
+   "shortName": "SSF",
+   "longName": "SSF Home Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0302.KL",
+   "shortName": "TOPMIX",
+   "longName": "Topmix Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0322.KL",
+   "shortName": "KHB",
+   "longName": "KHPT Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0326.KL",
+   "shortName": "SORENTO",
+   "longName": "Sorento Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0335.KL",
+   "shortName": "CARLORINO",
+   "longName": "Carlo Rino Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0338.KL",
+   "shortName": "KOPI",
+   "longName": "Oriental Kopi Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0350.KL",
+   "shortName": "MSB",
+   "longName": "MSB Global Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0357.KL",
+   "shortName": "OHM",
+   "longName": "Oasis Home Holding Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0380.KL",
+   "shortName": "AQUAWALK",
+   "longName": "Aquawalk Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0388.KL",
+   "shortName": "SEMICO",
+   "longName": "Semico Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0393.KL",
+   "shortName": "TEAMSTR",
+   "longName": "Teamstar Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0398.KL",
+   "shortName": "GDGROUP",
+   "longName": "Golden Destinations Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0455.KL",
+   "shortName": "BUSCAP",
+   "longName": "Bus Cap Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Consumer Defensive": [
+  {
+   "symbol": "0012.KL",
+   "shortName": "3A",
+   "longName": "Three-A Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0049.KL",
+   "shortName": "OCNCASH",
+   "longName": "Oceancash Pacific Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0074.KL",
+   "shortName": "AP",
+   "longName": "Ace Pacific Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0095.KL",
+   "shortName": "MAG",
+   "longName": "MAG Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0107.KL",
+   "shortName": "EDUSPEC",
+   "longName": "Eduspec Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0117.KL",
+   "shortName": "SMRT",
+   "longName": "SMRT Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0136.KL",
+   "shortName": "GREENYB",
+   "longName": "Greenyield Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0148.KL",
+   "shortName": "SUNZEN",
+   "longName": "Sunzen Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0175.KL",
+   "shortName": "HHRG",
+   "longName": "HHRG Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0178.KL",
+   "shortName": "SEDANIA",
+   "longName": "Sedania Innovator Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0179.KL",
+   "shortName": "BIOHLDG",
+   "longName": "Bioalpha Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0180.KL",
+   "shortName": "KTC",
+   "longName": "Kim Teck Cheong Consolidated Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0189.KL",
+   "shortName": "MATANG",
+   "longName": "Matang Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0201.KL",
+   "shortName": "NOVA",
+   "longName": "Nova Wellness Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0212.KL",
+   "shortName": "SDS",
+   "longName": "SDS Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0252.KL",
+   "shortName": "ORGABIO",
+   "longName": "Orgabio Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0260.KL",
+   "shortName": "PTRB",
+   "longName": "PT Resources Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0271.KL",
+   "shortName": "WELLS",
+   "longName": "Wellspire Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0280.KL",
+   "shortName": "MBN",
+   "longName": "MYMBN Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0300.KL",
+   "shortName": "SBH",
+   "longName": "SBH Marine Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0304.KL",
+   "shortName": "FPHB",
+   "longName": "Farm Price Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "03071.KL",
+   "shortName": "NOESIS",
+   "longName": "Noesis Exed Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0309.KL",
+   "shortName": "AGRICOR",
+   "longName": "Agricore CS Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0312.KL",
+   "shortName": "OFB",
+   "longName": "Ocean Fresh Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0316.KL",
+   "shortName": "SCB",
+   "longName": "Sik Cheong Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0327.KL",
+   "shortName": "OBHB",
+   "longName": "OB Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0330.KL",
+   "shortName": "SUPREME",
+   "longName": "Supreme Consolidated Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0333.KL",
+   "shortName": "VANZO",
+   "longName": "Vanzo Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0365.KL",
+   "shortName": "A1AKK",
+   "longName": "A1 A.K. Koh Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0371.KL",
+   "shortName": "CAMAROE",
+   "longName": "Camaroe Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Energy": [
+  {
+   "symbol": "0160.KL",
+   "shortName": "HHHCORP",
+   "longName": "Hiap Huat Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0219.KL",
+   "shortName": "RL",
+   "longName": "Reservoir Link Energy Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0220.KL",
+   "shortName": "OVH",
+   "longName": "Ocean Vantage Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0320.KL",
+   "shortName": "HAWK",
+   "longName": "Steel Hawk Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0383.KL",
+   "shortName": "PSP",
+   "longName": "PSP Energy Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0458.KL",
+   "shortName": "ELSA",
+   "longName": "Elsa Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0468.KL",
+   "shortName": "UNIPAC",
+   "longName": null,
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3042.KL",
+   "shortName": "PETRONM",
+   "longName": "Petron Malaysia Refining & Marketing Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4324.KL",
+   "shortName": "HENGYUAN",
+   "longName": "Hengyuan Refining Company Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5071.KL",
+   "shortName": "COASTAL",
+   "longName": "Coastal Contracts Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5078.KL",
+   "shortName": "M&G",
+   "longName": "Marine & General Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5115.KL",
+   "shortName": "ALAM",
+   "longName": "Alam Maritim Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5132.KL",
+   "shortName": "DELEUM",
+   "longName": "Deleum Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5133.KL",
+   "shortName": "PENERGY",
+   "longName": "Petra Energy Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5141.KL",
+   "shortName": "DAYANG",
+   "longName": "Dayang Enterprise Holdings Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5142.KL",
+   "shortName": "WASCO",
+   "longName": "Wasco Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5186.KL",
+   "shortName": "MHB",
+   "longName": "Malaysia Marine and Heavy Engineering Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5199.KL",
+   "shortName": "HIBISCS",
+   "longName": "Hibiscus Petroleum Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5210.KL",
+   "shortName": "ARMADA",
+   "longName": "Bumi Armada Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5218.KL",
+   "shortName": "VANTNRG",
+   "longName": "Vantris Energy Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5243.KL",
+   "shortName": "VELESTO",
+   "longName": "Velesto Energy Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5255.KL",
+   "shortName": "LFG",
+   "longName": "Lianson Fleet Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5257.KL",
+   "shortName": "CARIMIN",
+   "longName": "Carimin Petroleum Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5321.KL",
+   "shortName": "KEYFIELD",
+   "longName": "Keyfield International Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5681.KL",
+   "shortName": "PETDAG",
+   "longName": "PETRONAS Dagangan Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "6033.KL",
+   "shortName": "PETGAS",
+   "longName": "PETRONAS Gas Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7108.KL",
+   "shortName": "PERDANA",
+   "longName": "Perdana Petroleum Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7228.KL",
+   "shortName": "T7GLOBAL",
+   "longName": "T7 Global Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7250.KL",
+   "shortName": "UZMA",
+   "longName": "Uzma Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7277.KL",
+   "shortName": "DIALOG",
+   "longName": "Dialog Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Financial Services": [
+  {
+   "symbol": "0053.KL",
+   "shortName": "OSKVI",
+   "longName": "OSK Ventures International Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0058.KL",
+   "shortName": "JCBNEXT",
+   "longName": "JcbNext Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0150.KL",
+   "shortName": "FINTEC",
+   "longName": "Fintec Global Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0150PA.KL",
+   "shortName": "FINTEC-PA",
+   "longName": "Fintec Global Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0242.KL",
+   "shortName": "PPJACK",
+   "longName": "Pappajack Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0285.KL",
+   "shortName": "MERSEC",
+   "longName": "Mercury Securities Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0286.KL",
+   "shortName": "EMCC",
+   "longName": "Evergreen Max Cash Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1015.KL",
+   "shortName": "AMBANK",
+   "longName": "AMMB Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1023.KL",
+   "shortName": "CIMB",
+   "longName": "CIMB Group Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1058.KL",
+   "shortName": "MANULFE",
+   "longName": "Manulife Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1066.KL",
+   "shortName": "RHBBANK",
+   "longName": "RHB Bank Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1082.KL",
+   "shortName": "HLFG",
+   "longName": "Hong Leong Financial Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1155.KL",
+   "shortName": "MAYBANK",
+   "longName": "Malayan Banking Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1163.KL",
+   "shortName": "ALLIANZ",
+   "longName": "Allianz Malaysia Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1163PA.KL",
+   "shortName": "ALLIANZ-PA",
+   "longName": "Allianz Malaysia Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1171.KL",
+   "shortName": "MBSB",
+   "longName": "MBSB Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1198.KL",
+   "shortName": "MAA",
+   "longName": "MAA Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1295.KL",
+   "shortName": "PBBANK",
+   "longName": "Public Bank Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1818.KL",
+   "shortName": "BURSA",
+   "longName": "Bursa Malaysia Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2488.KL",
+   "shortName": "ABMB",
+   "longName": "Alliance Bank Malaysia Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3379.KL",
+   "shortName": "INSAS",
+   "longName": "Insas Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5088.KL",
+   "shortName": "APEX",
+   "longName": "Apex Equity Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5108.KL",
+   "shortName": "\"icapital.biz Berhad\"",
+   "longName": "iCapital.biz Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5139.KL",
+   "shortName": "AEONCR",
+   "longName": "AEON Credit Service (M) Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5185.KL",
+   "shortName": "AFFIN",
+   "longName": "AFFIN Bank Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5228.KL",
+   "shortName": "ELKDESA",
+   "longName": "ELK-Desa Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5230.KL",
+   "shortName": "TUNEPRO",
+   "longName": "Tune Protect Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5258.KL",
+   "shortName": "BIMB",
+   "longName": "Bank Islam Malaysia Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5274.KL",
+   "shortName": "HLCAP",
+   "longName": "Hong Leong Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5301.KL",
+   "shortName": "CTOS",
+   "longName": "CTOS Digital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Healthcare": [
+  {
+   "symbol": "0002.KL",
+   "shortName": "KOTRA",
+   "longName": "Kotra Industries Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0005.KL",
+   "shortName": "UCREST",
+   "longName": "UCrest Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0094.KL",
+   "shortName": "ZENTECH",
+   "longName": "Zen Tech International Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0101.KL",
+   "shortName": "TMCLIFE",
+   "longName": "TMC Life Sciences Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0155.KL",
+   "shortName": "MGRC",
+   "longName": "Malaysian Genomics Resource Centre Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0157.KL",
+   "shortName": "FOCUSP",
+   "longName": "Focus Point Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0163.KL",
+   "shortName": "CAREPLS",
+   "longName": "Careplus Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0171.KL",
+   "shortName": "PLABS",
+   "longName": "PeterLabs Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0182.KL",
+   "shortName": "LKL",
+   "longName": "LKL International Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0187.KL",
+   "shortName": "BCMALL",
+   "longName": "BCM Alliance Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0222.KL",
+   "shortName": "OPTIMAX",
+   "longName": "Optimax Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0243.KL",
+   "shortName": "CENGILD",
+   "longName": "Cengild Medical Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0256.KL",
+   "shortName": "UMC",
+   "longName": "UMediC Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0283.KL",
+   "shortName": "DCHCARE",
+   "longName": "DC Healthcare Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0303.KL",
+   "shortName": "ALPHA",
+   "longName": "Alpha IVF Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0329.KL",
+   "shortName": "METRO",
+   "longName": "Metro Healthcare Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0332.KL",
+   "shortName": "TOPVISN",
+   "longName": "Topvision Eye Specialist Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0363.KL",
+   "shortName": "PMCK",
+   "longName": "PMCK Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5079.KL",
+   "shortName": "ONEGLOVE",
+   "longName": "One Glove Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5225.KL",
+   "shortName": "IHH",
+   "longName": "IHH Healthcare Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5278.KL",
+   "shortName": "RHONEMA",
+   "longName": "Rhone Ma Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5341.KL",
+   "shortName": "LACMED",
+   "longName": "LAC Med Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5555.KL",
+   "shortName": "SUNMED",
+   "longName": "Sunway Healthcare Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5878.KL",
+   "shortName": "KPJ",
+   "longName": "KPJ Healthcare Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7081.KL",
+   "shortName": "PHARMA",
+   "longName": "Pharmaniaga Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7106.KL",
+   "shortName": "SUPERMX",
+   "longName": "Supermax Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7113.KL",
+   "shortName": "TOPGLOV",
+   "longName": "Top Glove Corporation Bhd.",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7148.KL",
+   "shortName": "DPHARMA",
+   "longName": "Duopharma Biotech Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7153.KL",
+   "shortName": "KOSSAN",
+   "longName": "Kossan Rubber Industries Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7178.KL",
+   "shortName": "YSPSAH",
+   "longName": "Y.S.P. Southeast Asia Holding Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Industrials": [
+  {
+   "symbol": "0001.KL",
+   "shortName": "SCOMNET",
+   "longName": "Supercomnet Technologies Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0010.KL",
+   "shortName": "IRIS",
+   "longName": "Iris Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0011.KL",
+   "shortName": "BTECH",
+   "longName": "Brite-Tech Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0024.KL",
+   "shortName": "JAG",
+   "longName": "JAG Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0025.KL",
+   "shortName": "YBS",
+   "longName": "YBS International Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0029.KL",
+   "shortName": "DIGISTA",
+   "longName": "Digistar Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0036.KL",
+   "shortName": "KGROUP",
+   "longName": "Key Alliance Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0039.KL",
+   "shortName": "GFM",
+   "longName": "GFM Services Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0041.KL",
+   "shortName": "AIMAX",
+   "longName": "AIMAX Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0045.KL",
+   "shortName": "SSB8",
+   "longName": "Southern Score Builders Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0048.KL",
+   "shortName": "ANCOMLB",
+   "longName": "Ancom Logistics Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0059.KL",
+   "shortName": "ECOHLDS",
+   "longName": "Ecobuilt Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0064.KL",
+   "shortName": "EFFICEN",
+   "longName": "Efficient E-Solutions Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0070.KL",
+   "shortName": "MQTECH",
+   "longName": "MQ Technology Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0072.KL",
+   "shortName": "ERDASAN",
+   "longName": "Erdasan Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0078.KL",
+   "shortName": "GDEX",
+   "longName": "GDEX Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0080.KL",
+   "shortName": "STRAITS",
+   "longName": "Straits Energy Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0081.KL",
+   "shortName": "REKATECH",
+   "longName": "Rekatech Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0084.KL",
+   "shortName": "FAST",
+   "longName": "Fast Energy Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0089.KL",
+   "shortName": "TEXCYCL",
+   "longName": "Tex Cycle Technology (M) Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0091.KL",
+   "shortName": "PGB",
+   "longName": "Propel Global Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0096.KL",
+   "shortName": "NEXGRAM",
+   "longName": "Nexgram Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0099.KL",
+   "shortName": "SCICOM",
+   "longName": "Scicom (MSC) Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0102.KL",
+   "shortName": "WAJA",
+   "longName": "Waja Konsortium Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0104.KL",
+   "shortName": "GENETEC",
+   "longName": "Genetec Technology Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0112.KL",
+   "shortName": "MIKROMB",
+   "longName": "Mikro MSC Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0122.KL",
+   "shortName": "AIM",
+   "longName": "Advance Information Marketing Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0128.KL",
+   "shortName": "FRONTKN",
+   "longName": "Frontken Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0133.KL",
+   "shortName": "SANICHI",
+   "longName": "Sanichi Technology Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0140.KL",
+   "shortName": "XOXNET",
+   "longName": "Xox Networks Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Real Estate": [
+  {
+   "symbol": "0069.KL",
+   "shortName": "VINVEST",
+   "longName": "Vinvest Capital Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0206.KL",
+   "shortName": "NADIBHD",
+   "longName": "Gagasan Nadi Cergas Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0273.KL",
+   "shortName": "VLB",
+   "longName": "Vestland Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0308.KL",
+   "shortName": "KTI",
+   "longName": "KTI Landmark Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0452.KL",
+   "shortName": "GOLDLI",
+   "longName": "Gold Li Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1147.KL",
+   "shortName": "GOB",
+   "longName": "Global Oriental Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1287.KL",
+   "shortName": "EXSIMHB",
+   "longName": "Exsim Hospitality Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1538.KL",
+   "shortName": "SYMLIFE",
+   "longName": "Symphony Life Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1589.KL",
+   "shortName": "IWCITY",
+   "longName": "Iskandar Waterfront City Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1694.KL",
+   "shortName": "MENANG",
+   "longName": "Menang Corporation (M) Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "1724.KL",
+   "shortName": "PARAMON",
+   "longName": "Paramount Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2224.KL",
+   "shortName": "SDRED",
+   "longName": "Selangor Dredging Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2259.KL",
+   "shortName": "TALAMT",
+   "longName": "Talam Transform Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2305.KL",
+   "shortName": "AYER",
+   "longName": "AYER Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2429.KL",
+   "shortName": "TANCO",
+   "longName": "Tanco Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "2682.KL",
+   "shortName": "PARKWD",
+   "longName": "Parkwood Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3158.KL",
+   "shortName": "YNHPROP",
+   "longName": "YNH Property Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3174.KL",
+   "shortName": "L&G",
+   "longName": "Land & General Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3417.KL",
+   "shortName": "E&O",
+   "longName": "Eastern & Oriental Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3557.KL",
+   "shortName": "ECOFIRS",
+   "longName": "EcoFirst Consolidated Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3611.KL",
+   "shortName": "PGLOBE",
+   "longName": "Paragon Globe Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3743.KL",
+   "shortName": "SUNSURIA",
+   "longName": "Sunsuria Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3913.KL",
+   "shortName": "MUIPROP",
+   "longName": "MUI Properties Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4022.KL",
+   "shortName": "MAXIM",
+   "longName": "Maxim Global Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4057.KL",
+   "shortName": "ASIAPAC",
+   "longName": "Asian Pac Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4251.KL",
+   "shortName": "IBHD",
+   "longName": "I-Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4286.KL",
+   "shortName": "SEAL",
+   "longName": "Seal Incorporated Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4464.KL",
+   "shortName": "PHB",
+   "longName": "Pegasus Heights Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5020.KL",
+   "shortName": "GLOMAC",
+   "longName": "Glomac Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5038.KL",
+   "shortName": "KSL",
+   "longName": "KSL Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Technology": [
+  {
+   "symbol": "0006.KL",
+   "shortName": "PINEAPP",
+   "longName": "Pineapple Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0008.KL",
+   "shortName": "WILLOW",
+   "longName": "Willownex Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0020.KL",
+   "shortName": "NETX",
+   "longName": "NetX Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0023.KL",
+   "shortName": "IFCAMSC",
+   "longName": "IFCA MSC Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0026.KL",
+   "shortName": "NOVAMSC",
+   "longName": "Nova MSC Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0028.KL",
+   "shortName": "SCOPE",
+   "longName": "Scope Industries Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0034.KL",
+   "shortName": "MMAG",
+   "longName": "MMAG Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0035.KL",
+   "shortName": "HEXCAP",
+   "longName": "Hextar Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0038.KL",
+   "shortName": "ARTRONIQ",
+   "longName": "Artroniq Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0040.KL",
+   "shortName": "OPENSYS",
+   "longName": "OpenSys (M) Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0043.KL",
+   "shortName": "MTRONIC",
+   "longName": "Metronic Global Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0050.KL",
+   "shortName": "WTS",
+   "longName": "WTS Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0051.KL",
+   "shortName": "CUSCAPI",
+   "longName": "Cuscapi Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0056.KL",
+   "shortName": "NCT",
+   "longName": "NCT Alliance Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0060.KL",
+   "shortName": "HM",
+   "longName": "Harvest Miracle Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0065.KL",
+   "shortName": "EFORCE",
+   "longName": "Excel Force MSC Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0066.KL",
+   "shortName": "VSOLAR",
+   "longName": "Vsolar Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0079.KL",
+   "shortName": "ALRICH",
+   "longName": "Aldrich Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0083.KL",
+   "shortName": "NOTION",
+   "longName": "Notion VTec Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0085.KL",
+   "shortName": "MLAB",
+   "longName": "Mlabs Systems Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0086.KL",
+   "shortName": "YGL",
+   "longName": "Ygl Convergence Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0090.KL",
+   "shortName": "ELSOFT",
+   "longName": "Elsoft Research Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0093.KL",
+   "shortName": "SOLUTN",
+   "longName": "Solution Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0097.KL",
+   "shortName": "VITROX",
+   "longName": "ViTrox Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0106.KL",
+   "shortName": "OMAI",
+   "longName": "OpenMove AI Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0108.KL",
+   "shortName": "N2N",
+   "longName": "N2N Connect Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0111.KL",
+   "shortName": "K1",
+   "longName": "K-One Technology Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0113.KL",
+   "shortName": "MMSV",
+   "longName": "MMS Ventures Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0118.KL",
+   "shortName": "TRIVE",
+   "longName": "Trive Property Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0119.KL",
+   "shortName": "APPASIA",
+   "longName": "AppAsia Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "Utilities": [
+  {
+   "symbol": "0318.KL",
+   "shortName": "ELRIDGE",
+   "longName": "Elridge Energy Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0369.KL",
+   "shortName": "JSSOLAR",
+   "longName": "JS Solar Holding Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "3069.KL",
+   "shortName": "MFCB",
+   "longName": "Mega First Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "4677.KL",
+   "shortName": "YTL",
+   "longName": "YTL Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5041.KL",
+   "shortName": "PBA",
+   "longName": "PBA Holdings Bhd",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5184.KL",
+   "shortName": "CYPARK",
+   "longName": "Cypark Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5209.KL",
+   "shortName": "GASMSIA",
+   "longName": "Gas Malaysia Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5264.KL",
+   "shortName": "MALAKOF",
+   "longName": "Malakoff Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5272.KL",
+   "shortName": "RANHILL",
+   "longName": "Ranhill Utilities Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5343.KL",
+   "shortName": "GENERGY",
+   "longName": "Wasco Greenergy Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5347.KL",
+   "shortName": "TENAGA",
+   "longName": "Tenaga Nasional Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "5614.KL",
+   "shortName": "NHB",
+   "longName": "Nuenergy Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "6742.KL",
+   "shortName": "YTLPOWR",
+   "longName": "YTL Power International Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "6874.KL",
+   "shortName": "JAGCPTL",
+   "longName": "JAG Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "7676.KL",
+   "shortName": "GCAP",
+   "longName": "G Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ],
+ "_all": [
+  {
+   "symbol": "0001.KL",
+   "shortName": "SCOMNET",
+   "longName": "Supercomnet Technologies Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0002.KL",
+   "shortName": "KOTRA",
+   "longName": "Kotra Industries Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0005.KL",
+   "shortName": "UCREST",
+   "longName": "UCrest Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0006.KL",
+   "shortName": "PINEAPP",
+   "longName": "Pineapple Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0007.KL",
+   "shortName": "PUC",
+   "longName": "PUC Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0008.KL",
+   "shortName": "WILLOW",
+   "longName": "Willownex Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0010.KL",
+   "shortName": "IRIS",
+   "longName": "Iris Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0011.KL",
+   "shortName": "BTECH",
+   "longName": "Brite-Tech Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0012.KL",
+   "shortName": "3A",
+   "longName": "Three-A Resources Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0017.KL",
+   "shortName": "NOVATECH",
+   "longName": "Nova Technology Services Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0020.KL",
+   "shortName": "NETX",
+   "longName": "NetX Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0022.KL",
+   "shortName": "PARLO",
+   "longName": "Parlo Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0023.KL",
+   "shortName": "IFCAMSC",
+   "longName": "IFCA MSC Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0024.KL",
+   "shortName": "JAG",
+   "longName": "JAG Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0025.KL",
+   "shortName": "YBS",
+   "longName": "YBS International Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0026.KL",
+   "shortName": "NOVAMSC",
+   "longName": "Nova MSC Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0028.KL",
+   "shortName": "SCOPE",
+   "longName": "Scope Industries Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0029.KL",
+   "shortName": "DIGISTA",
+   "longName": "Digistar Corporation Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0032.KL",
+   "shortName": "REDTONE",
+   "longName": "REDtone Digital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0034.KL",
+   "shortName": "MMAG",
+   "longName": "MMAG Holdings Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0035.KL",
+   "shortName": "HEXCAP",
+   "longName": "Hextar Capital Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0036.KL",
+   "shortName": "KGROUP",
+   "longName": "Key Alliance Group Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0037.KL",
+   "shortName": "RGB",
+   "longName": "RGB International Bhd.",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0038.KL",
+   "shortName": "ARTRONIQ",
+   "longName": "Artroniq Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0039.KL",
+   "shortName": "GFM",
+   "longName": "GFM Services Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0040.KL",
+   "shortName": "OPENSYS",
+   "longName": "OpenSys (M) Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0041.KL",
+   "shortName": "AIMAX",
+   "longName": "AIMAX Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0043.KL",
+   "shortName": "MTRONIC",
+   "longName": "Metronic Global Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0045.KL",
+   "shortName": "SSB8",
+   "longName": "Southern Score Builders Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  },
+  {
+   "symbol": "0048.KL",
+   "shortName": "ANCOMLB",
+   "longName": "Ancom Logistics Berhad",
+   "exchange": "KLS",
+   "quoteType": "EQUITY"
+  }
+ ]
+}
