@@ -3,11 +3,13 @@
 Bursa Malaysia stock data and Malaysian macro series as pandas DataFrames.
 Cached locally, one schema per data type, more than one source.
 
+Status: pre-release (0.1.0.dev0), not on PyPI yet. Install from a clone of this repository:
+
 ```bash
-pip install bursakit
+pip install .
 ```
 
-Status: pre-release (0.1.0.dev0). Not affiliated with Bursa Malaysia, Bank Negara Malaysia or Yahoo.
+Not affiliated with Bursa Malaysia, Bank Negara Malaysia or Yahoo.
 
 ## Usage
 
@@ -34,7 +36,7 @@ The second call for the same data reads from the local cache and makes no reques
 ```python
 bk.prices("1155", start="2020-01-01")  # one request
 bk.prices("1155", start="2020-01-01")  # none
-bk.prices("1155", start="2020-01-01", refresh=True)  # ignore the cache
+bk.prices("1155", start="2020-01-01", refresh=True)  # fetch again, replace what is stored
 
 bk.cache.info()  # location, row counts
 bk.cache.clear()  # or bk.cache.clear("prices")
@@ -96,6 +98,9 @@ except TickerNotFound as exc:
 A source that changes the shape of its response is rejected by the schema check and the next
 source is tried. Nothing unvalidated is written to the cache.
 
+A price day with a missing price or volume is dropped and the rest of the range is returned.
+Each dropped day is logged as a warning on the `bursakit` logger.
+
 ## Sources
 
 | Data | Source order |
@@ -105,6 +110,10 @@ source is tried. Nothing unvalidated is written to the cache.
 | `macro.fx` | data.gov.my Open API, then Bank Negara Malaysia Open API |
 
 Yahoo access is unofficial. Read each source's terms before redistributing data.
+
+Requests to one source are spaced out. data.gov.my allows 4 requests a minute, so a second
+request within 15 seconds waits. A wait of 5 seconds or more is logged as a warning on the
+`bursakit` logger; `logging.getLogger("bursakit").setLevel("ERROR")` silences it.
 See [docs/spike-go-no-go.md](docs/spike-go-no-go.md) for what was verified.
 
 ## Cache
@@ -117,6 +126,8 @@ Set `BURSAKIT_CACHE_DIR` to move it.
 - Dividends expire after 24 hours, listings after 7 days, name lookups after 30 days.
 - Each price refresh overlaps the stored history by a week. If the overlap no longer matches
   (a split or bonus issue), the ticker's history is refetched.
+- `refresh=True` replaces what is stored for that ticker or series with the requested range.
+  The stored rows are removed only after the new fetch succeeds, so a failed refresh loses nothing.
 
 ## Development
 
