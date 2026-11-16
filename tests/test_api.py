@@ -94,6 +94,35 @@ def test_bad_data_from_the_source_is_not_cached(offline: Offline) -> None:
     assert len(bk.prices("1155", "2024-01-01", "2024-03-31")) == 60
 
 
+def test_one_incomplete_row_does_not_fail_the_range(
+    offline: Offline, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    recorded = offline.yf.history
+
+    def with_a_hole(symbol: str, start: date | None, end: date | None) -> pd.DataFrame:
+        frame = recorded(symbol, start, end).astype({"Volume": "float64"})
+        frame.iloc[5, frame.columns.get_loc("Volume")] = float("nan")
+        return frame
+
+    monkeypatch.setattr(offline.yf, "history", with_a_hole)
+    assert len(bk.prices("1155", "2024-01-01", "2024-03-31")) == 59  # 60 trading days, one lost
+
+
+def test_a_failed_refresh_keeps_the_cached_prices(
+    offline: Offline, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    before = bk.prices("1155", "2024-01-01", "2024-03-31")
+
+    def down(symbol: str, start: date | None, end: date | None) -> pd.DataFrame:
+        raise SourceUnavailable("yahoo: down", source="yahoo")
+
+    monkeypatch.setattr(offline.yf, "history", down)
+    with pytest.raises(SourceUnavailable):
+        bk.prices("1155", "2024-01-01", "2024-03-31", refresh=True)
+
+    pd.testing.assert_frame_equal(bk.prices("1155", "2024-01-01", "2024-03-31"), before)
+
+
 def test_dividends(offline: Offline) -> None:
     df = bk.dividends("MAYBANK")
     again = bk.dividends(1155)
