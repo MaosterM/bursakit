@@ -7,7 +7,7 @@ import pytest
 
 from bursakit import _util, cache
 from bursakit.cache import Coverage, plan
-from bursakit.errors import SchemaError
+from bursakit.errors import SchemaError, SourceUnavailable
 from tests.conftest import TODAY
 
 D = date.fromisoformat
@@ -20,9 +20,13 @@ class FakeSource:
         self.calls: list[tuple[date, date]] = []
         self.factor = 1.0
         self.broken = False
+        #: Calls from this one on (counting from 1) fail, as if the source went down.
+        self.down_from: int | None = None
 
     def __call__(self, start: date, end: date) -> tuple[pd.DataFrame, str]:
         self.calls.append((start, end))
+        if self.down_from is not None and len(self.calls) >= self.down_from:
+            raise SourceUnavailable("fake: down", source="fake")
         days = pd.bdate_range(start, end)
         price = (5 + (days.day_of_year % 40) / 10) * self.factor
         frame = pd.DataFrame(
@@ -195,6 +199,39 @@ def test_refresh_discards_what_is_stored(source: FakeSource) -> None:
     assert source.calls[-1] == (D("2024-02-01"), D("2024-02-29"))
     assert refreshed["close"].min() > 9
     assert cache.coverage("prices", "TEST").start == D("2024-02-01")  # type: ignore[union-attr]
+
+
+def test_a_failed_refresh_keeps_what_is_stored(source: FakeSource) -> None:
+    before = get(source, "2024-01-01", "2024-03-29")
+    source.down_from = 2
+    with pytest.raises(SourceUnavailable):
+        get(source, "2024-01-01", "2024-03-29", refresh=True)
+
+    after = get(source, "2024-01-01", "2024-03-29")  # still answered by the cache
+    pd.testing.assert_frame_equal(after, before)
+    assert len(source.calls) == 2
+
+
+def test_a_refresh_with_bad_data_keeps_what_is_stored(source: FakeSource) -> None:
+    before = get(source, "2024-01-01", "2024-03-29")
+    source.broken = True
+    with pytest.raises(SchemaError):
+        get(source, "2024-01-01", "2024-03-29", refresh=True)
+
+    pd.testing.assert_frame_equal(get(source, "2024-01-01", "2024-03-29"), before)
+
+
+def test_a_failed_refetch_after_a_restatement_keeps_the_old_history(source: FakeSource) -> None:
+    before = get(source, "2024-01-01", "2024-03-29", verify="close", overlap=7)
+    source.factor = 0.5
+    source.down_from = 3  # the tail arrives and disagrees; the full refetch then fails
+    with pytest.raises(SourceUnavailable):
+        get(source, "2024-01-01", "2024-04-30", verify="close", overlap=7)
+
+    source.down_from = None
+    source.factor = 1.0
+    pd.testing.assert_frame_equal(get(source, "2024-01-01", "2024-03-29"), before)
+    assert len(source.calls) == 3  # that last read needed no fetch
 
 
 def test_a_frame_that_fails_the_schema_is_never_stored(source: FakeSource) -> None:

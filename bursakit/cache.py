@@ -234,6 +234,9 @@ def series(
     ``verify`` names a column to compare where a tail fetch overlaps stored
     rows. If the values moved (a split restated the history), the whole series
     is refetched.
+
+    ``refresh`` swaps everything stored for the series for a new fetch of
+    ``start..end``. Stored rows are only removed once that fetch has succeeded.
     """
     schema = SCHEMAS[kind]
     today = _util.today()
@@ -243,7 +246,10 @@ def series(
         empty = pd.DataFrame(columns=schema.column_names, index=pd.Index([], dtype="object"))
         return validate(empty, schema), "cache"
     if refresh:
-        _drop(kind, key)
+        # Fetch before touching the cache: a failed refresh leaves the stored rows alone.
+        df, source = fetch(start, end)
+        _store(kind, key, df, start, end, source=source, today=today, now=now, replace=True)
+        return _read(kind, key, start, end), source
 
     cov = coverage(kind, key)
     source = cov.source if cov else ""
@@ -259,9 +265,10 @@ def series(
             and not _agrees(kind, key, df, cov, part_start, verify)
         ):
             full_start = min(start, cov.start)
-            _drop(kind, key)
-            df, source = fetch(full_start, end)
-            _store(kind, key, df, full_start, end, source=source, today=today, now=now)
+            df, source = fetch(full_start, end)  # the old history stays if this fails
+            _store(
+                kind, key, df, full_start, end, source=source, today=today, now=now, replace=True
+            )
             break
         _store(kind, key, df, part_start, part_end, source=source, today=today, now=now)
     return _read(kind, key, start, end), source
@@ -291,18 +298,27 @@ def _store(
     source: str,
     today: date,
     now: float,
+    replace: bool = False,
 ) -> None:
-    """Replace the stored rows for ``start..end`` and extend the coverage record."""
+    """Replace the stored rows for ``start..end`` and extend the coverage record.
+
+    With ``replace``, everything stored for the series is swapped for these
+    rows in the same transaction, so a reader never sees it half done.
+    """
     df = validate(df, SCHEMAS[kind], source=source)  # the only door into the cache
     df = df.loc[(df.index >= pd.Timestamp(start)) & (df.index <= pd.Timestamp(end))]
     rows = [(kind, key, r.pop("date"), json.dumps(r)) for r in _records(df, index=True)]
     reached = min(end, today)
     settled = min(end, today - timedelta(days=1))
     with _db() as con:
-        con.execute(
-            "DELETE FROM series_rows WHERE kind = ? AND key = ? AND date BETWEEN ? AND ?",
-            (kind, key, start.isoformat(), end.isoformat()),
-        )
+        if replace:
+            con.execute("DELETE FROM series_rows WHERE kind = ? AND key = ?", (kind, key))
+            con.execute("DELETE FROM coverage WHERE kind = ? AND key = ?", (kind, key))
+        else:
+            con.execute(
+                "DELETE FROM series_rows WHERE kind = ? AND key = ? AND date BETWEEN ? AND ?",
+                (kind, key, start.isoformat(), end.isoformat()),
+            )
         con.executemany("INSERT INTO series_rows VALUES (?, ?, ?, ?)", rows)
         old = con.execute(
             "SELECT start, covered_through, settled_through, fetched_at FROM coverage "
@@ -345,12 +361,6 @@ def _read(kind: str, key: str, start: date, end: date) -> pd.DataFrame:
         columns=schema.column_names,
     )
     return validate(df, schema, source="cache")
-
-
-def _drop(kind: str, key: str) -> None:
-    with _db() as con:
-        con.execute("DELETE FROM series_rows WHERE kind = ? AND key = ?", (kind, key))
-        con.execute("DELETE FROM coverage WHERE kind = ? AND key = ?", (kind, key))
 
 
 def _records(df: pd.DataFrame, *, index: bool) -> list[dict[str, Any]]:
