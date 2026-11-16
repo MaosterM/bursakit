@@ -160,9 +160,7 @@ def _index(index: pd.Index, schema: Schema, where: str) -> pd.Index:
         raise SchemaError(f"{where}: missing dates in index")
     if not (dates == dates.normalize()).all():
         raise SchemaError(f"{where}: index has intraday timestamps; expected calendar dates")
-    dates = dates.astype("datetime64[ns]")
-    dates.name = schema.index
-    return dates
+    return pd.DatetimeIndex(dates.astype("datetime64[ns]"), name=schema.index)
 
 
 def _coerce(series: pd.Series, column: Column, where: str) -> pd.Series:
