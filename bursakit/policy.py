@@ -9,6 +9,7 @@ to bursakit errors before :func:`call` decides whether to retry.
 from __future__ import annotations
 
 import json
+import logging
 import threading
 import time
 from collections.abc import Callable, Mapping
@@ -24,6 +25,12 @@ __all__ = ["DEFAULT", "POLICIES", "HTTPNotFound", "Policy", "Response", "call", 
 T = TypeVar("T")
 
 USER_AGENT = "bursakit (+https://pypi.org/project/bursakit/)"
+
+#: Waits at least this long (seconds) are logged as warnings, so a call that
+#: seems to hang says why. Shorter waits are logged at debug level.
+NOTICE_AFTER = 5.0
+
+_log = logging.getLogger(__name__)
 
 
 @dataclass(frozen=True)
@@ -104,7 +111,13 @@ def _wait_turn(source: str, policy: Policy) -> None:
         slot = max(now, _next_slot.get(source, now))
         _next_slot[source] = slot + policy.min_interval
     if slot > now:
-        sleep(slot - now)
+        _pause(source, slot - now, "to stay inside its rate limit")
+
+
+def _pause(source: str, seconds: float, reason: str) -> None:
+    level = logging.WARNING if seconds >= NOTICE_AFTER else logging.DEBUG
+    _log.log(level, "%s: waiting %.0f s %s", source, seconds, reason)
+    sleep(seconds)
 
 
 def call(source: str, fn: Callable[[], T]) -> T:
@@ -123,7 +136,7 @@ def call(source: str, fn: Callable[[], T]) -> T:
             if not exc.retryable or attempt >= policy.max_retries:
                 raise
             wait = min(policy.backoff * 2**attempt, policy.max_wait)
-        sleep(wait)
+        _pause(source, wait, f"before retry {attempt + 1} of {policy.max_retries}")
         attempt += 1
 
 
