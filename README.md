@@ -140,3 +140,8 @@ mypy
 
 Tests block network access. `python tests/record_fixtures.py` re-records the fixtures from
 the live sources.
+
+`pytest tests_live` asks the real sources for a little data and checks the answers still fit
+the schemas. It needs network access and is not part of plain `pytest`. A GitHub Actions
+workflow runs it every night; a failure there means a source changed or is down. A test is
+skipped, not failed, when a source rate limits the machine running it.

@@ -45,7 +45,7 @@ bursakit = "bursakit.cli:main"
 packages = ["bursakit"]
 
 [tool.hatch.build.targets.sdist]
-include = ["bursakit", "tests", "docs", "README.md", "LICENSE"]
+include = ["bursakit", "tests", "tests_live", "docs", "README.md", "LICENSE"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
