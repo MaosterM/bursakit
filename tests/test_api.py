@@ -26,6 +26,7 @@ def test_prices_by_code_symbol_and_name_are_identical(offline: Offline) -> None:
         "currency": "MYR",
         "source": "yahoo",
         "attribution": "Yahoo Finance",
+        "terms": "https://legal.yahoo.com/xw/en/yahoo/terms/otos/index.html",
     }
 
 
@@ -153,7 +154,8 @@ def test_opr(offline: Offline) -> None:
 
     assert list(df.columns) == ["rate", "change"]
     assert df.loc["2023-05-03", "rate"] == 3.0
-    assert df.attrs["source"] == "bnm" and df.attrs["attribution"] == "Bank Negara Malaysia"
+    assert df.attrs["source"] == "bnm" and df.attrs["attribution"] == "Source: Bank Negara Malaysia"
+    assert df.attrs["terms"] == "https://www.bnm.gov.my/terms-of-use-bnm-datasets"
     assert len(offline.transport.calls) == calls == 2
     assert len(again) == 6
 

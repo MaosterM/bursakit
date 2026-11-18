@@ -285,5 +285,6 @@ def test_adapters_declare_what_they_support() -> None:
         "datagovmy": {"fx"},
     }
     assert all(source.attribution for source in (Yahoo(), BNM(), DataGovMy()))
+    assert all(source.terms.startswith("https://") for source in (Yahoo(), BNM(), DataGovMy()))
     assert policy.POLICIES.keys() >= supported.keys()
     assert not Source().supports("prices")

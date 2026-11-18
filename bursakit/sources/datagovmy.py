@@ -25,7 +25,9 @@ _RATE_TYPES = {"buying": "buy", "selling": "sell", "middle": "mid"}
 
 class DataGovMy(Source):
     name: ClassVar[str] = "datagovmy"
-    attribution: ClassVar[str] = "data.gov.my (Bank Negara Malaysia)"
+    # The dataset is BNM's rates republished under CC BY 4.0; credit both.
+    attribution: ClassVar[str] = "Source: Bank Negara Malaysia, via data.gov.my (CC BY 4.0)"
+    terms: ClassVar[str] = "https://creativecommons.org/licenses/by/4.0/"
 
     def fx(self, currency: str, start: date, end: date) -> pd.DataFrame:
         column = currency.lower()

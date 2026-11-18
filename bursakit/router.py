@@ -23,7 +23,7 @@ from .schema import SCHEMAS, validate
 from .sources import BNM, DataGovMy, Source, Yahoo
 from .tickers import Ticker
 
-__all__ = ["ROUTES", "attribution", "fetch", "lookup", "register", "reset"]
+__all__ = ["ROUTES", "attribution", "fetch", "lookup", "register", "reset", "terms"]
 
 #: Sources to try, in order, for each data type. Official APIs come first
 #: wherever one exists. For fx both are official; data.gov.my answers any date
@@ -62,6 +62,13 @@ def attribution(source: str) -> str:
     if source in _instances or source in _FACTORIES:
         return _source(source).attribution
     return source
+
+
+def terms(source: str) -> str:
+    """The link to a source's terms of use, or "" if unknown."""
+    if source in _instances or source in _FACTORIES:
+        return _source(source).terms
+    return ""
 
 
 def _attempt(kind: str, *args: Any) -> tuple[Any, str]:

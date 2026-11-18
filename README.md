@@ -9,7 +9,8 @@ Status: pre-release (0.1.0.dev0), not on PyPI yet. Install from a clone of this 
 pip install .
 ```
 
-Not affiliated with Bursa Malaysia, Bank Negara Malaysia or Yahoo.
+Not affiliated with Bursa Malaysia, Bank Negara Malaysia or Yahoo. bursakit ships no data:
+each user fetches their own, under each source's terms (see [Sources](#sources)).
 
 ## Usage
 
@@ -46,8 +47,11 @@ Every DataFrame says where it came from:
 
 ```python
 df.attrs  # {'kind': 'prices', 'ticker': '1155', 'currency': 'MYR',
-#  'source': 'yahoo', 'attribution': 'Yahoo Finance'}
+#  'source': 'yahoo', 'attribution': 'Yahoo Finance',
+#  'terms': 'https://legal.yahoo.com/xw/en/yahoo/terms/otos/index.html'}
 ```
+
+When you publish or share data, show `attribution` and link to `terms`.
 
 ### Command line
 
@@ -74,8 +78,9 @@ Malaysian calendar dates, the index is sorted and unique, money is in MYR.
 | `macro.opr` | `date` (decision date) | `rate`, `change` (float64, percent) |
 | `macro.fx` | `date` | `buy`, `sell`, `mid` (float64, MYR per 1 unit of the currency) |
 
-Known gaps: `market` is empty and `sector` uses Yahoo's sector names, because no source with
-clear terms supplies Bursa's own classification yet. Prices and dividends are adjusted for
+Known gaps: `market` is empty and `sector` uses Yahoo's sector names. Bursa's own
+classification is only available from Bursa, whose terms forbid storing its website content
+without written consent. Prices and dividends are adjusted for
 splits and bonus issues by the source.
 
 ## Errors
@@ -103,13 +108,19 @@ Each dropped day is logged as a warning on the `bursakit` logger.
 
 ## Sources
 
-| Data | Source order |
-| --- | --- |
-| prices, dividends, listings, name lookup | Yahoo Finance through `yfinance` |
-| `macro.opr` | Bank Negara Malaysia Open API |
-| `macro.fx` | data.gov.my Open API, then Bank Negara Malaysia Open API |
+| Data | Source order | Terms |
+| --- | --- | --- |
+| prices, dividends, listings, name lookup | Yahoo Finance through `yfinance` | Personal, non-commercial use; no redistribution |
+| `macro.opr` | Bank Negara Malaysia Open API | Free, commercial use and redistribution allowed with credit |
+| `macro.fx` | data.gov.my Open API, then Bank Negara Malaysia Open API | Same as BNM; data.gov.my is CC BY 4.0 |
 
-Yahoo access is unofficial. Read each source's terms before redistributing data.
+**Yahoo data is for your own use.** Yahoo's terms do not allow automated collection, commercial
+use or redistribution without Yahoo's written permission, and `yfinance` is unofficial. Do not
+publish, sell or serve Yahoo-sourced prices, dividends or listings to others.
+
+BNM and data.gov.my data can be shared and used commercially if you credit it: "Source: Bank
+Negara Malaysia" with a link to the BNM dataset terms. `df.attrs` carries both.
+See [docs/source-terms.md](docs/source-terms.md) for the clauses behind this table.
 
 Requests to one source are spaced out. data.gov.my allows 4 requests a minute, so a second
 request within 15 seconds waits. A wait of 5 seconds or more is logged as a warning on the

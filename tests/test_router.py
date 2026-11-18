@@ -107,6 +107,12 @@ def test_every_route_names_a_source_that_supports_it() -> None:
 
 
 def test_attribution() -> None:
-    assert router.attribution("bnm") == "Bank Negara Malaysia"
+    assert router.attribution("bnm") == "Source: Bank Negara Malaysia"
     assert router.attribution("yahoo") == "Yahoo Finance"
     assert router.attribution("cache") == "cache"
+
+
+def test_terms() -> None:
+    assert router.terms("bnm") == "https://www.bnm.gov.my/terms-of-use-bnm-datasets"
+    assert router.terms("datagovmy").startswith("https://creativecommons.org/licenses/by/4.0")
+    assert router.terms("cache") == ""

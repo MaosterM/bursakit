@@ -35,6 +35,9 @@ FX pull through BNM is 60 requests against 1 through data.gov.my. BNM remains th
 
 ## Terms
 
+Superseded by [source-terms.md](source-terms.md), read on 2026-11-18. The table below is
+what this spike knew.
+
 | Source | Status |
 | --- | --- |
 | data.gov.my | Rate limit read from developer.data.gov.my: 4 requests per minute on the Data Catalogue API, HTTP 429 beyond that. The policy table uses this. Licence wording not read in this spike. |
@@ -44,7 +47,8 @@ FX pull through BNM is 60 requests against 1 through data.gov.my. BNM remains th
 
 ## Open items before v0.1.0
 
-1. Read the Yahoo, BNM and data.gov.my terms pages by hand and record the wording in the README.
+1. ~~Read the Yahoo, BNM and data.gov.my terms pages by hand and record the wording in the README.~~
+   Done in [source-terms.md](source-terms.md).
 2. `listings()` cannot fill `market` (Main / ACE / LEAP) from Yahoo. The column exists and is empty until a source with clear terms supplies it.
 3. Sector labels are Yahoo's 11 sectors, not Bursa's own classification.
 4. Yahoo back-adjusts prices and dividends for splits and bonus issues. The cache detects a changed history on the next refresh and refetches, but figures are split-adjusted, not as-traded.
