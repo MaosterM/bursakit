@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "bursakit"
-version = "0.1.0.dev0"
+dynamic = ["version"]
 description = "Bursa Malaysia stock data and Malaysian macro series as pandas DataFrames, cached locally."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -38,14 +38,23 @@ dev = [
     "types-requests>=2.31",
 ]
 
+[project.urls]
+Source = "https://github.com/MaosterM/bursakit"
+Changelog = "https://github.com/MaosterM/bursakit/blob/main/CHANGELOG.md"
+"Source terms" = "https://github.com/MaosterM/bursakit/blob/main/docs/source-terms.md"
+
 [project.scripts]
 bursakit = "bursakit.cli:main"
+
+# One place for the version: bursakit/__init__.py.
+[tool.hatch.version]
+path = "bursakit/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["bursakit"]
 
 [tool.hatch.build.targets.sdist]
-include = ["bursakit", "tests", "tests_live", "docs", "README.md", "LICENSE"]
+include = ["bursakit", "tests", "tests_live", "docs", "README.md", "CHANGELOG.md", "LICENSE"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
