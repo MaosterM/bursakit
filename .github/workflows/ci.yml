@@ -18,8 +18,8 @@ jobs:
           # The oldest pandas the package declares support for.
           - { os: ubuntu-latest, python: "3.10", pandas: "pandas==2.2.*" }
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python }}
           cache: pip
