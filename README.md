@@ -3,7 +3,8 @@
 Bursa Malaysia stock data and Malaysian macro series as pandas DataFrames.
 Cached locally, one schema per data type, more than one source.
 
-Status: pre-release (0.1.0.dev0), not on PyPI yet. Install from a clone of this repository:
+Status: 0.1.0, the first release. Not on PyPI yet; install from a clone of this repository
+or from the wheel attached to the GitHub release:
 
 ```bash
 pip install .
