@@ -53,6 +53,8 @@ class YFClient(Protocol):
 class Yahoo(Source):
     name: ClassVar[str] = "yahoo"
     attribution: ClassVar[str] = "Yahoo Finance"
+    # Personal, non-commercial use only. See docs/source-terms.md.
+    terms: ClassVar[str] = "https://legal.yahoo.com/xw/en/yahoo/terms/otos/index.html"
 
     def __init__(self, client: YFClient | None = None, *, page_size: int = 250) -> None:
         self._given = client

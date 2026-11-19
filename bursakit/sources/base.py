@@ -27,6 +27,8 @@ class Source:
     name: ClassVar[str] = ""
     #: Credit line carried in ``df.attrs["attribution"]``.
     attribution: ClassVar[str] = ""
+    #: Link to the terms the data is used under, carried in ``df.attrs["terms"]``.
+    terms: ClassVar[str] = ""
 
     def prices(self, ticker: Ticker, start: date, end: date) -> pd.DataFrame:
         raise NotSupported(f"{self.name} does not provide prices")

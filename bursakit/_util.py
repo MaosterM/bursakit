@@ -32,7 +32,12 @@ def tag(df: pd.DataFrame, kind: str, source: str, **extra: str) -> pd.DataFrame:
 
     attrs: dict[str, str] = {"kind": kind}
     attrs.update(extra)
-    attrs.update(currency="MYR", source=source, attribution=router.attribution(source))
+    attrs.update(
+        currency="MYR",
+        source=source,
+        attribution=router.attribution(source),
+        terms=router.terms(source),
+    )
     df.attrs.clear()
     df.attrs.update(attrs)
     return df

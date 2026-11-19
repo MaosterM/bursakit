@@ -30,7 +30,9 @@ OPR_FIRST_YEAR = 2004
 
 class BNM(Source):
     name: ClassVar[str] = "bnm"
-    attribution: ClassVar[str] = "Bank Negara Malaysia"
+    # Wording and link required by sections 4(a) and 4(b) of the BNM dataset terms.
+    attribution: ClassVar[str] = "Source: Bank Negara Malaysia"
+    terms: ClassVar[str] = "https://www.bnm.gov.my/terms-of-use-bnm-datasets"
 
     def _get(self, path: str, params: dict[str, str] | None = None) -> Any:
         """The ``data`` member of a response, or ``None`` on "No records found"."""
