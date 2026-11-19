@@ -1,17 +1,29 @@
 # bursakit
 
+[![PyPI](https://img.shields.io/pypi/v/bursakit)](https://pypi.org/project/bursakit/)
+[![Python](https://img.shields.io/pypi/pyversions/bursakit)](https://pypi.org/project/bursakit/)
+[![CI](https://github.com/MaosterM/bursakit/actions/workflows/ci.yml/badge.svg)](https://github.com/MaosterM/bursakit/actions/workflows/ci.yml)
+[![Sources checked nightly](https://img.shields.io/github/actions/workflow/status/MaosterM/bursakit/live.yml?label=sources%20checked%20nightly)](https://github.com/MaosterM/bursakit/actions/workflows/live.yml)
+[![License: MIT](https://img.shields.io/github/license/MaosterM/bursakit)](https://github.com/MaosterM/bursakit/blob/main/LICENSE)
+
 Bursa Malaysia stock data and Malaysian macro series as pandas DataFrames.
 Cached locally, one schema per data type, more than one source.
 
-Status: 0.1.0, the first release. Not on PyPI yet; install from a clone of this repository
-or from the wheel attached to the GitHub release:
+![Overnight Policy Rate and USD/MYR since 2015](https://raw.githubusercontent.com/MaosterM/bursakit/main/docs/img/opr-usdmyr.png)
+
+<sub>Made with `bk.macro.opr()` and `bk.macro.fx("USD")`. Source: Bank Negara Malaysia
+([terms](https://www.bnm.gov.my/terms-of-use-bnm-datasets)); USD/MYR via data.gov.my
+([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Code in
+[examples/quickstart.ipynb](https://github.com/MaosterM/bursakit/blob/main/examples/quickstart.ipynb).</sub>
+
+Status: alpha. Python 3.10 or later.
 
 ```bash
-pip install .
+pip install bursakit
 ```
 
 Not affiliated with Bursa Malaysia, Bank Negara Malaysia or Yahoo. bursakit ships no data:
-each user fetches their own, under each source's terms (see [Sources](#sources)).
+each user fetches their own, under each source's terms (see Sources below).
 
 ## Usage
 
@@ -121,12 +133,12 @@ publish, sell or serve Yahoo-sourced prices, dividends or listings to others.
 
 BNM and data.gov.my data can be shared and used commercially if you credit it: "Source: Bank
 Negara Malaysia" with a link to the BNM dataset terms. `df.attrs` carries both.
-See [docs/source-terms.md](docs/source-terms.md) for the clauses behind this table.
+See [docs/source-terms.md](https://github.com/MaosterM/bursakit/blob/main/docs/source-terms.md) for the clauses behind this table.
 
 Requests to one source are spaced out. data.gov.my allows 4 requests a minute, so a second
 request within 15 seconds waits. A wait of 5 seconds or more is logged as a warning on the
 `bursakit` logger; `logging.getLogger("bursakit").setLevel("ERROR")` silences it.
-See [docs/spike-go-no-go.md](docs/spike-go-no-go.md) for what was verified.
+See [docs/spike-go-no-go.md](https://github.com/MaosterM/bursakit/blob/main/docs/spike-go-no-go.md) for what was verified.
 
 ## Cache
 
@@ -144,6 +156,8 @@ Set `BURSAKIT_CACHE_DIR` to move it.
 ## Development
 
 ```bash
+git clone https://github.com/MaosterM/bursakit
+cd bursakit
 pip install -e ".[dev]"
 pytest              # offline, replays recorded responses
 ruff check .

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 (unreleased)
+
+First release on PyPI. No change to the library.
+
+- `pip install bursakit` now works.
+- README links point to GitHub, so they work on the PyPI page.
+- Releases are built and uploaded to PyPI by GitHub Actions.
+- README badges and a chart; a runnable example in `examples/quickstart.ipynb`.
+
 ## 0.1.0 (2026-11-18)
 
 First release.
